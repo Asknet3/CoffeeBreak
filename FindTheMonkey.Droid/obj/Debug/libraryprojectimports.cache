@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/FindTheMonkey.Droid/obj/Debug/__library_projects__/Android-iBeacon-Service/library_project_imports/res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/FindTheMonkey.Droid/obj/Debug/__library_projects__/Android-iBeacon-Service/library_project_imports/assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/FindTheMonkey.Droid/obj/Debug/__library_projects__/Android-iBeacon-Service.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Droid/CoffeeBreak.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.8b89b80a" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
+    <Files>
+      <File FileName="Droid/MainActivity.cs" Line="88" Column="48" />
+      <File FileName="CoffeeBreak/MyPage.xaml" Line="3" Column="23" />
+      <File FileName="CoffeeBreak/MyPage.xaml.cs" Line="3" Column="21" />
+      <File FileName="CoffeeBreak/Helper/Utility.cs" Line="41" Column="2" />
+      <File FileName="Droid/SendMail.cs" Line="18" Column="58" />
+      <File FileName="CoffeeBreak/Helper/ISendMail.cs" Line="5" Column="2" />
+      <File FileName="Droid/SQLite_Android.cs" Line="7" Column="1" />
+      <File FileName="Droid/Notification.cs" Line="36" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
