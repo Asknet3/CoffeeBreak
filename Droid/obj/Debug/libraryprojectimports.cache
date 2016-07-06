@@ -2,19 +2,16 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Android-iBeacon-Service/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/SQLitePCL.raw/library_project_imports/res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\SQLitePCL.raw\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Android-iBeacon-Service/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/SQLitePCL.raw/library_project_imports/assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\SQLitePCL.raw\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/Android-iBeacon-Service.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/asknet/Downloads/xamarin-android-ibeacon-service-1.3 2/samples/FindTheMonkey/Droid/obj/Debug/__library_projects__/SQLitePCL.raw.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\SQLitePCL.raw.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

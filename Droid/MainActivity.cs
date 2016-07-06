@@ -162,7 +162,7 @@ namespace CoffeeBreak.Droid
 					//bool send = DependencyService.Get<ISendMail> ().Send();
 
 					//---------------
-					var uri = Android.Net.Uri.Parse ("http://10.213.168.77:85/Sender.aspx?cfun=pippolo");
+					var uri = Android.Net.Uri.Parse ("http://asknet.ddns.net/CoffeeBreakService.asmx/UpdateMessage?u=Pino");
 					var intent = new Intent (Intent.ActionCall, uri);
 					StartActivity (intent);
 					// --------------
