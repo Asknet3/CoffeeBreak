@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars></Jars>
-  <ResolvedResourceDirectories />
-  <ResolvedAssetDirectories />
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\FindTheMonkey.Droid\obj\Debug\__library_projects__\Android-iBeacon-Service\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\FindTheMonkey.Droid\obj\Debug\__library_projects__\Android-iBeacon-Service\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
-  <ResolvedResourceDirectoryStamps />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Giuseppe\Documents\Visual Studio 2015\Projects\AskBeacon\FindTheMonkey.Droid\obj\Debug\__library_projects__\Android-iBeacon-Service.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
 </Paths>

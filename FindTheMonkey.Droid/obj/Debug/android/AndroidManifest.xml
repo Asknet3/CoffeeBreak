@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.findthemonkey_android" android:versionName="1.4.0" android:versionCode="3">
+  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="18" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <application android:label="FindTheMonkey.Droid" android:icon="@drawable/xamarin_icon" android:debuggable="false" android:name="mono.android.app.Application" android:allowBackup="true">
+    <service android:enabled="true" android:exported="true" android:isolatedProcess="false" android:label="iBeacon" android:name="com.radiusnetworks.ibeacon.service.IBeaconService"></service>
+    <service android:enabled="true" android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor">
+      <meta-data android:name="background" android:value="true" />
+      <intent-filter android:priority="1">
+        <action android:name="com.findthemonkey_android.DID_RANGING" />
+        <action android:name="com.findthemonkey_android.DID_MONITORING" />
+      </intent-filter>
+    </service>
+    <activity android:label="Find The Monkey" android:launchMode="singleTask" android:name="md5c276c539c5ee6d09a51236c9e60a1191.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.findthemonkey_android.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.findthemonkey_android" />
+      </intent-filter>
+    </receiver>
+    <service android:enabled="true" android:exported="true" android:isolatedProcess="false" android:label="iBeacon" android:name="com.radiusnetworks.ibeacon.service.IBeaconService"></service>
+    <service android:enabled="true" android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"></service>
+  </application>
+</manifest>

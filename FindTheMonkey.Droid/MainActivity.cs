@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using Android.App;
 using Android.Content;
@@ -6,13 +5,13 @@ using Android.Content.PM;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using RadiusNetworks.IBeaconAndroid;
 using Color = Android.Graphics.Color;
 using Android.Support.V4.App;
+using RadiusNetworks.IBeaconAndroid;
 
 namespace FindTheMonkey.Droid
 {
-	[Activity(Label = "Find The Monkey", MainLauncher = true, LaunchMode = LaunchMode.SingleTask)]
+    [Activity(Label = "Find The Monkey", MainLauncher = true, LaunchMode = LaunchMode.SingleTask)]
 	public class MainActivity : Activity, IBeaconConsumer
 	{
 		private const string UUID = "ACFD065E-C3C0-11E3-9BBE-1A514932AC01";

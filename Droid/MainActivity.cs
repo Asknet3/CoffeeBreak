@@ -38,25 +38,16 @@ namespace CoffeeBreak.Droid
 	[Activity(Label = "Find The Monkey", MainLauncher = true, LaunchMode = LaunchMode.SingleTask)]
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity, IBeaconConsumer
 	{
-		// Definisco la variabile che identifica univocamente la mia notifica.
-		private static readonly int notificationId = 1000;
-
 		private User username;
-		NotificationManager notificationManager;
-		Notification notification;
-
 
 		private const string UUID = "ACFD065E-C3C0-11E3-9BBE-1A514932AC01";
 		private const string monkeyId = "Monkey";
 
-		bool _paused;
-		Android.Views.View _view;
 		IBeaconManager _iBeaconManager;
 		MonitorNotifier _monitorNotifier;
 		RangeNotifier _rangeNotifier;
 		RadiusNetworks.IBeaconAndroid.Region _monitoringRegion;
 		RadiusNetworks.IBeaconAndroid.Region _rangingRegion;
-		TextView _text;
 
 		int _previousProximity;
 
@@ -79,8 +70,7 @@ namespace CoffeeBreak.Droid
 
 			LoadApplication (new App ());
 
-
-//			#region Gestione notifiche
+		#region Gestione notifiche
 //			username = Utility.GetUser (DependencyService.Get<ISQLite> ().GetConnection ());
 //			string uname = username != null ? username.username : "";
 //			notificationManager = GetSystemService( Context.NotificationService) as NotificationManager;
@@ -96,9 +86,8 @@ namespace CoffeeBreak.Droid
 //
 //			// Costruisco la notifica
 //			notification = builder.Build();
-//			#endregion
-//			_view = FindViewById<RelativeLayout>(111222);
-//			_text = FindViewById<TextView>(3333);
+		#endregion
+
 
 
 
@@ -120,22 +109,17 @@ namespace CoffeeBreak.Droid
 		protected override void OnResume()
 		{
 			base.OnResume();
-//			_paused = false;
 		}
 
 		protected override void OnPause()
 		{
 			base.OnPause();
-//			_paused = true;
 		}
 
 		void EnteredRegion(object sender, MonitorEventArgs e)
 		{
-//			if(_paused)
-//			{
-				//ShowNotification();
-			}
-//		}
+
+	    }
 
 		void ExitedRegion(object sender, MonitorEventArgs e)
 		{
@@ -143,7 +127,7 @@ namespace CoffeeBreak.Droid
 		}
 
 
-		bool isFirstTime = true;
+		// bool isFirstTime = true;
 		DateTime startTime = DateTime.Now;
 		void RangingBeaconsInRegion(object sender, RangeEventArgs e)
 		{
@@ -159,23 +143,23 @@ namespace CoffeeBreak.Droid
 				case ProximityType.Immediate:
 
 					UpdateDisplay ("Ciao " + username.username + ", ho trovato un beacon! \n E' MOLTO vicino\n\nRssi: " + (ProximityType)beacon.Rssi, Xamarin.Forms.Color.Green);
-					//bool send = DependencyService.Get<ISendMail> ().Send();
+                        //bool send = DependencyService.Get<ISendMail> ().Send();
 
-					//---------------
-					var uri = Android.Net.Uri.Parse ("http://asknet.ddns.net/CoffeeBreakService.asmx/UpdateMessage?u=Pino");
-					var intent = new Intent (Intent.ActionCall, uri);
-					StartActivity (intent);
-					// --------------
+                        //---------------
+                        var uri = Android.Net.Uri.Parse ("http://asknet.ddns.net/CoffeeBreakService.asmx/UpdateMessage?u=Pino");
+                        var intent = new Intent (Intent.ActionView, uri);
+                        StartActivity (intent);
+                        // --------------
 
 
-//					if(isFirstTime || (DateTime.Now - startTime).TotalSeconds > 10) 
-//					{
-//						isFirstTime = false;
-//						ShowNotification();
-//						startTime = DateTime.Now;
-//					break;
-//					}
-					break;
+                        //					if(isFirstTime || (DateTime.Now - startTime).TotalSeconds > 10) 
+                        //					{
+                        //						isFirstTime = false;
+                        //						ShowNotification();
+                        //						startTime = DateTime.Now;
+                        //					break;
+                        //					}
+                        break;
 				case ProximityType.Near:
 					UpdateDisplay("Ho trovato un beacon! \n E' vicino\n\nRssi: " + (ProximityType)beacon.Rssi, Xamarin.Forms.Color.Yellow);
 					break;
@@ -214,8 +198,9 @@ namespace CoffeeBreak.Droid
 
 
 
-		#region ============   Gestione notifiche  ===============
-		public void ShowNotification()
+        #region ============   Gestione notifiche  ===============
+        /*
+        public void ShowNotification()
 		{
 			username = Utility.GetUser (DependencyService.Get<ISQLite> ().GetConnection ());
 			string uname = username != null ? username.username : "";
@@ -235,12 +220,12 @@ namespace CoffeeBreak.Droid
 
 			notificationManager.Notify (notificationId, notification);
 		}
-		#endregion
+        */
+        #endregion
 
 
 
-
-		protected override void OnDestroy()
+        protected override void OnDestroy()
 		{
 			base.OnDestroy();
 //

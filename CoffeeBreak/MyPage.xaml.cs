@@ -16,7 +16,7 @@ namespace CoffeeBreak
 
 		public MyPage ()
 		{
-			InitializeComponent ();
+			//InitializeComponent ();
 
 			// Verifico che esista il nome utente. Se esiste, nascondo il campo e vado avanti.
 			var db = DependencyService.Get<ISQLite> ().GetConnection ();
@@ -48,7 +48,6 @@ namespace CoffeeBreak
 			}
 
 			stackLayout.Children.Add (lbl_message);
-			//stackLayout.Children.Add (myText);
 
 			this.Content = stackLayout;
 		}
